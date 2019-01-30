@@ -368,7 +368,7 @@ class AirQuality(Sensor):
                 gas = self.sensor.data.gas_resistance
 
                 # Add to the burn in data, but only keep last 500 results
-                print(str(len(self.burn_in_data)))
+                # print(str(len(self.burn_in_data)))
                 if len(self.burn_in_data) >= 500:
                     del (self.burn_in_data[0])
                 self.burn_in_data.append(gas)
@@ -401,9 +401,9 @@ class AirQuality(Sensor):
                 # Calculate air_quality_score.
                 air_quality_score = hum_score + gas_score
 
-                print('Gas baseline: {0} Ohms, humidity baseline: {1:.2f} %RH\n'.format(
-                    self.gas_baseline,
-                    self.hum_baseline))
+                # print('Gas baseline: {0} Ohms, humidity baseline: {1:.2f} %RH\n'.format(
+                #    self.gas_baseline,
+                #    self.hum_baseline))
 
                 return air_quality_score
 

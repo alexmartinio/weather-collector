@@ -3,6 +3,7 @@
     <words>
       <w>fqdn</w>
       <w>homedir</w>
+      <w>mariadb</w>
     </words>
   </dictionary>
 </component>
